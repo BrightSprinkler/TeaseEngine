@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="TeaseEngine.Controls.SelectModuleControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:TeaseEngine.Controls"
+             mc:Ignorable="d" d:DesignWidth="800" Height="80
+             ">
+    <Grid>
+        <CheckBox HorizontalAlignment="Left" VerticalAlignment="Center" x:Name="IsStartingModuleCheckBox" Click="IsStartingModuleCheckBox_Click">
+            <CheckBox.LayoutTransform>
+                <ScaleTransform ScaleX="2" ScaleY="2" />
+            </CheckBox.LayoutTransform>
+        </CheckBox>
+        <Label Content="Label" HorizontalAlignment="Center" Margin="38,0,10,0" VerticalAlignment="Top" x:Name="NameLabel" FontSize="24" Width="752" HorizontalContentAlignment="Center"/>
+        <Label Content="Label" HorizontalAlignment="Center" Margin="38,44,10,0" VerticalAlignment="Top" x:Name="DescriptionLabel" Width="752" HorizontalContentAlignment="Center"/>
+    </Grid>
+</UserControl>

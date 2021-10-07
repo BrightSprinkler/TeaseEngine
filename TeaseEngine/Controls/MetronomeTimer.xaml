@@ -1,0 +1,31 @@
+﻿<UserControl x:Class="TeaseEngine.Controls.MetronomeTimer"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:my="clr-namespace:TeaseEngine.Controls.CircularProgressBar" 
+             xmlns:controls="clr-namespace:TeaseEngine.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="200" d:DesignWidth="200">
+
+    <StackPanel>
+        <Border Height="200" Width="200" Background="Black" CornerRadius="120">
+            <Grid>
+                <my:CircularProgressBar
+            x:Name="ProgressBar"
+            Thickness="15" Radius="93"
+            Value="{Binding ProgressValue}"
+            Style="{StaticResource CircularProgressBarStyle}"
+            Background="#C9565D"
+            Fill="Transparent"
+            Stroke="#C95650"
+            StrokeThickness="3"
+            StrokeMode="Middle"
+            EndLineCap="Triangle" />
+                <Label x:Name="TimeLabel" Content="00:00" HorizontalAlignment="Center" Margin="22,56,22,0" VerticalAlignment="Top" Height="78" Width="156" FontSize="55" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontWeight="SemiBold" BorderThickness="0" Foreground="White"/>
+            </Grid>
+        </Border>
+
+    </StackPanel>
+
+</UserControl>
